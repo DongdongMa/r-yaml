@@ -34,22 +34,32 @@ Data dictionary specification:
       format: yyyy-mm-dd
     - field: State
       description: state of residence
-      type: string
+      type: strinTg
 
 ## Installation
 
-### CRAN
+### Released version
 
 You can install this package directly from CRAN by running (from within R):
-`install.packages('yaml')`
 
-### Zip/Tarball
+```R
+install.packages('yaml')
+```
+
+### Development version
+
+```R
+# install.packages("devtools")
+devtools::install_github("viking/r-yaml/pkg")
+```
+
+Alternatively, you install from the bundle created by GitHub:
 
 1. Download the appropriate zip file or tar.gz file from Github
 2. Unzip the file and change directories into the yaml directory
 2. Run `R CMD INSTALL pkg`
 
-### Git
+Or with git:
 
 1. Download the source via git: `git clone https://github.com/viking/r-yaml.git yaml`
 2. (optional) Run `R CMD check yaml/pkg` to make sure everything is OK.
